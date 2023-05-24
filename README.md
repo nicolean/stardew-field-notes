@@ -1,4 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Stardew Field Notes
+
+## Background
+
+The [Stardew Valley Wiki](https://stardewvalleywiki.com) is a wonderful resource for anyone playing the game, whether you're playing for the first time or the thousandth.
+
+I find myself visiting the site practically every time I play--what do I use the Stardew Valley Wiki for the most?
+
+- Looking up an item and continually referring to its details
+- Looking up a person(s) and continually referring to their favorite item or schedule
+- Looking up what Community Center Bundle items I can obtain given the season, weather, and time of day.
+
+Through this process, I end up with several open tabs that I repeatedly switch between while only referring to a small portion of each page. So while the Stardew Valley Wiki is the best source of information, a more specific UI for players (in-game) day-to-day reference can be built.
+
+### Basic UI/UX
+
+Left pane with item and people (etc?) search with rich results, right pane with "pinned" items for continuous reference
+
+Basic Search:
+
+- Search for specific items or people (etc?)
+- Rich results are shown (maybe display preview of most important properties in list), can be selected for full view
+- Result cards with all details can be "pinned" so they can be referenced at-a-glance
+
+Community Center Bundle Search:
+
+- Enter the specifics of my day (ex: "sunny summer day")
+- Rich results including obtainable Community Center Bundle items are shown
+- Result cards with all details can be "pinned" so they can be referenced at-a-glance
+
+Future Ideas:
+
+- Organizational section in pinned area
+- History
+- ...
+
+## Built With
+
+- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- DB? will start with hardcoded json data from wiki--since things don't often change that will do for a while
+- May try https://github.com/cristianbote/goober (css-in-js solution)
 
 ## Getting Started
 
@@ -14,21 +54,12 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Roadmap
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [ ] Implement search
+- [ ] Implement pinning UI
+- [ ] Implement Community Center Bundle Search
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
